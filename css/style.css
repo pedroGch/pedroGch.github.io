@@ -75,7 +75,7 @@ h4{
 #logo{
   width: 53%;
   height: 100%;
-  background-image: url('/img/logo.png');
+  background-image: url('../img/logo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ img{
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  background: url('/img/logo_resumido.png');
+  background: url('../img/logo_resumido.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
@@ -244,7 +244,7 @@ img{
 }
 
 .container .formBx form .inputBox input[type="submit"] {
-
+  border-radius: 15px;
   padding: 8px 20px;
   margin-top: -10px;
   width: 320px;
@@ -258,16 +258,11 @@ img{
   border: none;
   text-transform: uppercase;
   margin-bottom: 25px;
-  background-image: url('/img/logo_resumido_2.jpeg');
+  background-image: url('../img/logo_resumido_2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -63px;
 
-}
-
-.container .formBx form .inputBox input[type="submit"]:focus {
-  background: var(--blue);
-  color: #fff;
 }
 
 .container .formBx form .inputBox span {
@@ -333,7 +328,7 @@ img{
 /* FIN SECCION DE CONTACTO*/
 @media screen and (min-width:576px) {
   .personajes{
-    background-image: url('/img/logo_resumido_2.jpeg');
+    background-image: url('../img/logo_resumido_2.jpeg');
     background-position-x: -50px;
     background-size: cover;
     background-repeat: round;
