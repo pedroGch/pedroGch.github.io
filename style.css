@@ -344,6 +344,11 @@ img{
   p{
     font-size: 1.18rem;
   }
+
+  h2{
+    font-size: 2.1rem;
+    text-align: center;
+  }
   #logo{
     background-size: contain;
   }
@@ -382,5 +387,31 @@ img{
     position: absolute;
     top: 90px;
     left: 10px; 
+  }
+  #video_promocional{
+    height: 550px;
+  }
+  .video iframe{
+    height: 230px;
+  }
+
+  .centro_pc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 25px auto;
+  }
+  .margen_estandar{
+    width: 90%;
+  }
+  .margen_estandar > p {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .centro_pc > img{
+    width: 50%;
+  }
+  .margen_estandar > h2{
+    font-size: 1.5rem;
   }
 }
