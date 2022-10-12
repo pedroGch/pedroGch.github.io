@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,700;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#99b6ff;
+  background-image:
+  radial-gradient(at 91% 86%, hsla(313,78%,79%,1) 0px, transparent 50%),
+  radial-gradient(at 31% 85%, hsla(318,76%,68%,1) 0px, transparent 50%),
+  radial-gradient(at 8% 23%, hsla(221,79%,66%,1) 0px, transparent 50%),
+  radial-gradient(at 68% 33%, hsla(303,72%,60%,1) 0px, transparent 50%);
+  color:#ecf0f1;
+}
+
+span{
+  font-family: 'Nunito', sans-serif;
+}
+
+ul{
+  list-style:none;
+  font-family: 'Nunito', sans-serif;
+}
+
+ul li{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+p{
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  line-height: 21px;
+  font-weight: thin;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 120px;
+  position: relative;
+  border-bottom: solid 1px #fff;
+}
+
+h1{
+  font-size: 0;
+}
+
+h2,h3{
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: solid 2px whitesmoke;
+  border-top: solid 2px white;
+  padding-left: 15px;
+  -webkit-backdrop-filter: blur( 7.5px );
+  background: rgba( 250, 250, 250, 0.2 );
+  backdrop-filter: blur( 13.5px );
+
+}
+
+h4{
+  font-family: 'Nunito', sans-serif;
+  font-weight: thin;
+  font-size: 0.6rem;
+  margin-bottom: 15px;
+}
+
+#logo{
+  width: 53%;
+  height: 100%;
+  background-image: url('/img/logo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  text-align: center;
+}
+nav>div{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: thin solid rgba(255, 255, 255, 1);
+
+}
+
+nav>div>a{
+  color: white;
+  text-decoration: none;
+}
+.introduccion{
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  min-width: 320px;
+
+}
+
+.centrado{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+}
+
+.introduccion .texto{
+  width: 50%;
+  min-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+
+.video{
+  width: 100%;
+  min-width: 320px;
+
+}
+
+.video iframe{
+  width: 100%;
+  height: 300px;
+  border-style: none;
+}
+
+.margen_estandar{
+  padding: 0 15px 0 15px;
+  margin-bottom: 15px;
+}
+
+.margen_estandar > h2{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.margen_estandar > p{
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.personajes{
+  display: flex;
+  overflow-x: scroll;
+  padding: 24px;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.personajes .item{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+.personajes .item .img_personaje{
+  width: 50%;
+  margin: 0 auto;
+  height: 217px;
+}
+.personajes .item h3 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: url('/img/logo_resumido.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+/* SECCION DE CONTACTO */
+#seccion-contacto {
+  margin-top: 15px;
+  padding-bottom: 80px;
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.container .formBx {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 25px ;
+}
+
+.container .formBx form {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 15px;
+}
+
+.container .formBx form .inputBox {
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container .formBx form .inputBox:last-child {
+  margin-bottom: 0px;
+}
+
+.container .formBx form .inputBox input,
+.container .formBx form .inputBox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  resize: none;
+}
+
+.container .formBx form .inputBox textarea {
+  height: 100px;
+
+}
+
+.container .formBx form .inputBox input[type="submit"] {
+
+  padding: 8px 20px;
+  margin-top: -10px;
+  width: 320px;
+  height: 80px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-shadow: 0px 0px 12px rgb(157 0 248 / 92%);
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  background-image: url('/img/logo_resumido_2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -63px;
+
+}
+
+.container .formBx form .inputBox input[type="submit"]:focus {
+  background: var(--blue);
+  color: #fff;
+}
+
+.container .formBx form .inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s;
+}
+
+.container .formBx form .inputBox input:focus~span,
+.container .formBx form .inputBox textarea:focus~span,
+.container .formBx form .inputBox input:valid~span,
+.container .formBx form .inputBox textarea:valid~span {
+  transform: translateY(-24px);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8rem;
+}
+
+.container .formBx form .inputBox input:focus,
+.container .formBx form .inputBox textarea:focus,
+.container .formBx form .inputBox input:valid,
+.container .formBx form .inputBox textarea:valid {
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.imgBx{
+  display: none;
+}
+
+.footer_contacto{
+  border-top: thin solid white;
+}
+
+#datos_tp{
+  margin: 0 25px;
+}
+
+#logo_davinci{
+  display: inline-block;
+  background-image: url('../img/logo_davinci.png');
+  width: 300px;
+  height: 105px;
+  font-size: 0px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 25px;
+}
+#foto{
+  width: 250px;
+  height: 250px;
+}
+#foto img{
+  border-radius: 50%;
+  margin-left: 25px;
+}
+/* FIN SECCION DE CONTACTO*/
+@media screen and (min-width:576px) {
+  .personajes{
+    background-image: url('/img/logo_resumido_2.jpeg');
+    background-position-x: -50px;
+    background-size: cover;
+    background-repeat: round;
+    letter-spacing: 1px;
+    color: #e9e4e4;
+  }
+  .personajes .descripcion_personaje{
+    background: rgb(0 0 0 / 20%);
+    backdrop-filter: blur( 13.5px );
+    padding: 20PX;
+    text-shadow: 2px 2px 3px black;
+  }
+  .personajes .item {
+    display: flex;
+  }
+  .personajes .item .img_personaje {
+    height: 500px;
+    width: 100%;
+  }
+  .item:nth-last-child(2) .img_personaje{
+    width: 220%;
+  }
+  .item:nth-last-child(1) .img_personaje{
+    width: 220%;
+  }
+  .container .formBx form .inputBox:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo_davinci {
+    margin-left: 25%;
+  }
+
+  #foto img {
+    margin-left: 50%;
+}
+}
+
+@media screen and (min-width:993px) {
+  p{
+    font-size: 1.18rem;
+  }
+
+  h2{
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  #logo{
+    background-size: contain;
+  }
+  nav{
+    padding: 1rem 0;
+  }
+
+  nav>div{
+      display: inline-block;
+      max-width: 200px;
+      padding: 1rem 0;
+      cursor: pointer;
+      border-bottom: none;
+      vertical-align: middle;
+      margin: 0 20px;
+  }
+
+  nav>div:hover{
+    border-bottom: thin solid whitesmoke;
+  }
+
+  .introduccion{
+    border-top: solid 1px white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .centrado{
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+  .introduccion .texto{
+    width: 41%;
+    text-align: left;
+    position: absolute;
+    top: 90px;
+    left: 10px; 
+  }
+  #video_promocional{
+    height: 550px;
+  }
+  .video iframe{
+    height: 230px;
+  }
+
+  .centro_pc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 25px auto;
+  }
+  .margen_estandar{
+    width: 90%;
+  }
+  .margen_estandar > p {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .centro_pc > img{
+    width: 50%;
+  }
+  .margen_estandar > h2{
+    font-size: 1.5rem;
+  }
+  .personajes{
+    display: inline-block;
+    background-image: none;
+    overflow-x: unset;
+    scroll-snap-type: none;
+    width: 80%;
+    margin: 25px 10%;
+  }
+  .personajes .item {
+    display: flex;
+    margin: 10% auto;
+  }
+  .personajes .item .img_personaje{
+    height: 300px;
+    width: 30%;
+  }
+  .img_personaje > picture img{
+    width: 100%;
+    
+  }
+
+  .personajes .descripcion_personaje{
+    width: 500px;
+  }
+  .galeria > div{
+    display: contents;
+  }
+  .galeria > div > img{   
+    width: calc(40% - 10px);
+    margin:50px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container .formBx {
+    width: 100%;
+    display: flex;
+    padding-right: 25px;
+    margin-left: 50px;
+  }
+  .container .formBx form {
+    width: 100%;
+  }
+  .container .imgBx {
+    display: inline-block;
+    width: 50%;
+  }
+  .container .imgBx img {
+    bottom: 0;
+    max-height: 100%;
+    margin-left: 0px; 
+  }
+  #datos_tp{
+    display: flex;
+    margin: 0 15%;
+    align-items: center;
+  }
+
+}
+
+@media screen and (min-width:1460px) {
+  body{
+    max-width: 1460px;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 26px;
+  }
+  .introduccion .texto {
+    left: 50px;
+  }
+  .introduccion > img {
+    margin-top: 39px;
+  }
+  #video_promocional {
+    height: 750px;
+  }
+  .personajes .item {
+    margin: 17% auto;
+  }
+  #datos_tp {
+    margin: 0 5%;
+  }
+  #logo_davinci {
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+  #logo_contenedor{
+    display: inline-block;
+    float: left;
+  }
+  #datos_tp ul{
+    margin-left: 150px;
+  }
+}
