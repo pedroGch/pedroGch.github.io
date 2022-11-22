@@ -4,307 +4,315 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Tales of Vesperia</title>
+  <title>Parcial 2 IDM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <div id="logo">
-      <h1>Tales of Vesperia: Definitive Edition</h1>
-    </div>    
-  </header>
-  <nav>
-    <div>
-        <a href="#intro"><span>Introduccion</span></a>
-    </div>
-    <div>
-        <a href="#caracteristicas_principales"><span>Caracteristicas principales</span></a>
-    </div>
-    <div>
-        <a href="#personajes"><span>Personajes</span></a>
-    </div>
-    <div>
-        <a href="#galeria"><span>Galería</span></a>
-    </div>
-    <div>
-        <a href="#contacto"><span>Formualrio de Contacto</span></a>
-    </div>
-  </nav>
+  <div class="bg-verde-principal">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="container-xl container-fluid">
+          <div class="align-self-start">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page"  href="#principal">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light"  href="#seccion-libre">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light"  href="#intro-productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light"  href="#lista-productos">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" align-self-start">
+            <div class="">
+              <a class="navbar-brand logo" href="#">
+                <img src="./img/logo_resumido.svg" alt="logotipo el rincon sustentable" width="30" height="24">
+              </a>
+            </div>
+          </div>
+          <div class="align-self-start">
+            <span class="icono-blanco">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+    </nav>
+  </div>
+    <!--------------------------------------------------------------------->
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/ilustracion-1.png" class="d-block w-100" alt="ilustracion con paneles solares casas y arboles">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ilustracion-2.png" class="d-block w-100" alt="ilustracion con generadores eolicos casas y arboles">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ilustracion-3.png" class="d-block w-100" alt="conjuto arboles casa paneles y generadores">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>      
+    </header>
+    <!--------------------------------------------------------------------->
   <main>
-    <section class="introduccion" id="intro">
-      <picture>
-        <source media="(min-width:993px)" srcset="./img/banners/banner.png">
-        <img src="./img/banners/banner_1.png" alt="imagen con todos los personajes">
-      </picture>
-      <h2 class="centrado">Introducción</h2>
-      <div class="texto">
-        <p>Creada para la celebración de su <em>décimo</em> aniversario, Tales of Vesperia: Definitive Edition trae uno de los JRPGs más adorados a todas las consolas modernas.</p>
-        <p>...</p>
-        <p>
-          Tales of Vesperia, una de las entregas más populares de la serie 'Tales of' <em>vuelve con una resolución de pantalla mejorada y personajes, eventos y trajes que no habían aparecido nunca fuera de Japón.</em>
-        </p>
-        <p>...</p>
-        <p>
-          Comienza una lucha de poder en una civilización que depende de una antigua tecnología —Blastia— y el imperio que la controla. El destino de dos amigos que recorren caminos separados se entrelaza en una <em>aventura épica</em> que amenaza la existencia de todos.
-        </p>
-        <ul>
-          <li>Fecha de lanzamiento: <em>11/01/2019</em></li>
-          <li>Géneros: Rol</li>
-          <li>Desarrollador: BANDAI NAMCO Studios Inc.</li>
-          <li>Plataformas: <em>Xbox One, PlayStation 4, Nintendo Switch y PC</em></li>
-        </ul>
-      </div>
-    </section>
-    <div class="video">
-      <iframe id="video_promocional" src="https://www.youtube.com/embed/bo5xnYoOc54" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <section id="caracteristicas_principales">
-      <h2>Una querida historia que regresa</h2>
-      <div class="centro_pc">
-        <div class="margen_estandar">
-          <p>
-            La historia de un joven héroe en busca de justicia que cautivó a los fans de 'Tales of' vuelve a Xbox One, PlayStation 4, Nintendo Switch y PC. Vuelve al fantástico mundo de Terca Lumireis, que ahora luce como nunca antes, gracias a con una <em>resolución nativa mejorada.</em>
+    <section class="container" id="principal">
+      <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-center my-4">
+          <img class="img-fluid" src="./img/imagen_principal.jpg" alt="imagen principal una mano sostiene un brote">
+        </div>
+        <div class="col-12 ">
+          <h1 class="text-center">Bienvenidos al <span class="titulo">Rincón sustentable</span></h1>
+          <p class="text-center p-3">
+            Desde <em>el rincón sustentable</em> queremos enfatizar en la importancia del <strong>uso y aprovechamiento adecuado de nuestros recursos naturales</strong>, promoviendo la reutilización, el reciclaje y el manejo responsable de nuestros desperdicios.
+          </p>
+          <p class="text-center p-3">
+            Con este fin, nos vemos en el compromiso incansable de promover <em>buenas practicas sustentables</em>, mediante el intercambio activo de conocimiento por parte de nuestra <strong>comunidad</strong> y acercando las herramientas necesarios para llevar a cabo nuestro objetivo.
           </p>
         </div>
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/k1Ckq16U6iI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
       </div>
-      <h2>Todo en una misma edición</h2>
-      <div class="centro_pc">
-        <div class="margen_estandar"> 
-          <p>¡Sumérgete en la Definitive Edition de <em>of Vesperia con sus gráficos actualizados, una increíble banda sonora, emocionantes minijuegos, jefes y todo un guardarropa nunca antes publicado!</em></p>
-        </div>
-        <img src="./img/capturas/graficos_actualizados.jpg" alt="grupo de aventureros luchando dentro del juego">        
-      </div>
-      <h2>El grupo se refuerza</h2>
-      <div class="centro_pc">
-        <div class="margen_estandar">  
-          <p>emprende su aventura con Estelle, una joven noble; Karol, un chico en busca de un gremio en el que integrarse; Rita, una erudita excéntrica; Raven, un relajado arquero; Judith, una misteriosa dragona; y Repede, un perro que fuma en pipa... Y, además, se incluyen dos nuevos personajes jugables: Flynn Scifo, el rival y mejor amigo del personaje principal; y Patty Fleur, una joven pirata que quiere recuperar sus recuerdos perdidos.</p>
-        </div>
-        <img src="./img/posters/poster_3.jpg" alt="grupo de heroes haciendo una pose">
-      </div>
-      <h2>Lucha con estilo</h2>
-      <div class="centro_pc">
-        <div class="margen_estandar">        
-          <p>
-            <em>¡Reúne a tu equipo favorito y disfruta de emocionantes combates en tiempo real con sus habilidades y Artes Místicas!</em> Tales of Vesperia: Definitive Edition cuenta con una versión especial del LMBS (sistema de combate dinámico lineal, por sus siglas en inglés) que ya es un emblema en la franquicia 'Tales of'. Los jugadores controlarán a un miembro del grupo en tiempo real, mientras que los otros tres estarán
-            controlados por la IA y harán exactamente lo que se le haya indicado a través de una serie de órdenes personalizadas. Durante los combates, los jugadores podrán cambiar entre los cuatro personajes en cualquier momento, así como emplear ataques físicos, lanzar artes o incluso recurrir a poderosas artes místicas.
+
+    </section>
+    <!--------------------------------------------------------------------->
+    <section class="container" id="seccion-libre">
+      <div class="row my-3">
+        <div class="col-12 mb-4 col-lg-6 col-xl-4  bg-verde-principal">
+          <h2 class=" my-3 text-light">Primero lo primero</h2>
+          <div class="my-3 d-flex justify-content-center">
+            <img class="rounded-3 img-fluid" src="./img/josefina_perez.jpg" alt="fotografía de Josefina Perez en un parque al aire libre">
+          </div>
+          <p class="text-light p-2">
+            Antes de comenzar a hacer cualquier cosa, vamos a ver con qué herramientas contamos, para esto nuestro <strong>experta en reciclaje Josefina Perez</strong> nos muestra como todo puede transformarse en un poderoso aliado.
           </p>
-          <h2>¡Une fuerzas con tus amigos!</h2>
-          <p>Utilizando el sistema de co-op local, <em>también puedes optar por sumar hasta 3 jugadores más</em>, cada uno controlando uno de los 9 personajes disponibles. ¡Redescubre esta emocionante historia con amigos o familia!</p>
+          <div class="my-3">
+            <button type="button" class="btn btn-light color-verde-principal">ver más </button>
+          </div>
         </div>
-        <img src="./img/posters/poster_2.jpg" alt="personajes principales luchando juntos">
-      </div>  
+        <div class="col-12 mb-4 col-lg-6 col-xl-4" >
+          <h2 class="my-3">¿Problemas al reciclar?</h2>
+          <div class="my-3 d-flex justify-content-center">
+            <img class="rounded-3 img-fluid" src="./img/contenedor_logo.jpeg" alt="Foto de un contenedor de basura con el logo de reciclado">
+          </div>
+          <p class="my-3 p-2">
+            Te damos <strong>los tips más importantes</strong> y todo lo que tienes que tener en cuenta a la hora de separar tus residuos.
+            Incluso veremos una manera de generar <em>menos residuos</em>. 
+          </p>
+          <div class="my-3">
+            <button type="button" class="btn btn-success">ver más</button>
+          </div>
+        </div>
+        <div class="col-12 mb-4 col-lg-6 col-xl-4  bg-verde-principal">
+          <h2 class="text-light my-3">Techos verdes</h2>
+          <div class="my-3 d-flex justify-content-center">
+            <img class="rounded-3 img-fluid" src="./img/techo_verde.jpg" alt="foto que ilustra la colocación de un techo verde">
+          </div>
+          <p class="my-3 text-light p-2">
+            Te contamos todo sobre los <strong>techos verdes</strong>, sus beneficios, implementación y cuidado, veras que no es tan difícil como parece. 
+          </p>
+          <div class="my-3">
+            <button type="button" class="btn btn-light color-verde-principal">ver más</button>
+          </div>
+        </div> 
+      </div>
     </section>
-    <section id="personajes">
-      <h2>Personajes</h2>
-      <div class="personajes"> 
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/flynn2_pc.png">
-              <source media="(min-width:576px)" srcset="./img/personajes/set_2/flynn.png">
-              <img src="./img/personajes/flynn2.png" alt="imagen de flynn">
-            </picture>  
-          </div>
-          <div class="descripcion_personaje"> 
-            <h3>Flynn Scifo</h3>
-            <h4>Interpretado por: Mamoru Miyano (JP) / Sam Riegel (EN)</h4>
-            <p>
-              Un caballero que lucha con espada y escudo. <em>Compartió su infancia con Yuri</em> aunque estuvieron muy contrastados, tanto física como eticamente. Tiene los mismos ideales de ayudar a los demás, pero antepone los intereses del gobierno. <em>Como caballero, viaja regularmente para matar monstruos.</em>
-            </p>
-          </div>
+    <!--------------------------------------------------------------------->
+    <section class="container" id="intro-productos">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center my-2 color-marron">No dejes de visitar nuestra tienda</h2>
         </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/judith_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/judith.png">
-              <img src="./img/personajes/judith.png" alt="imagen de judith">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>Judith</h3>
-            <h4>Interpretada por: Aya Hisakawa (JP) / Alison Lees-Taylor (EN)</h4>
-            <p>
-              Judith es una mujer joven y bonita de la tribu Krytian <em>Moviéndose sobre la espalda de un dragón llamado Ba'Ul</em>. A pesar de unirse al grupo, Judith tiene una misision secreta y no dejará que nada le impida cumplirla.
-            </p>
-          </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-md-center">  
+          <img class="my-3 img-fluid" src="./img/bolsas-mercado.jpeg" alt="imagen de bolsas de compras con logos sustentables">
         </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/karol_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/karol.png">
-              <img src="img/personajes/karol.png" alt="imagen de karol">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>Karol Capel</h3>
-            <h4>Interpretado por: Kumiko Watanabe (JP) / Julie Ann Taylor (EN)</h4>
-            <p>
-              Es un niño pequeño que dice ser parte del <em>gremio "Les Lames Chasseresses".</em> Ciertas circunstancias lo harán unirse al grupo de Yuri. A pesar de su buen humor, es bastante tímido y carece de confianza en sí mismo.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/patty_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/patty.png">
-              <img src="img/personajes/patty.png" alt="iamgen de patty">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>Patty Fleur</h3>
-            <h4>Interpretada por: Chiwa Saïto (JP) / Sandy Fox (EN)</h4>
-            <p>
-              Una joven <em>pirata que viaja por el mundo en busca del romance y el legendario tesoro del famoso pirata Aifread.</em> A pesar de su apariencia, tiene una personalidad y forma de expresarse más acordes a las de un anciano.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/raven_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/raven.png">
-              <img src="img/personajes/raven.png" alt="imagen de raven">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>raven</h3>
-            <h4>Interpretado por: Eiji Takemoto (JP) / Joe J. Thomas (EN)</h4>
-            <p>
-              Un hombre misterioso al que le gustan las cosas sencillas. Conoce a Yuri al comienzo del juego mientras están en la cárcel. Tiende a molestar al grupo con sus bromas, pero sabe cómo ponerse serio cuando es necesario. Sin embargo, <em>sufre de un pasado del que no quiere hablar.</em>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/repede_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/repede.png">
-              <img src="img/personajes/repede.png" alt="imagen de repede">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>repede</h3>
-            <h4>Interpretado por: Makoto Ishii</h4>
-            <p>
-              <em>Sí, es un perro.</em> Sí, tiene una pipa. Si eso no los convence de probar este juego, nada lo hará. Es muy amigable con los que acepta, pero odia cuando alguien que no conoce intenta tocarlo.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/rita_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/rita.png">
-              <img src="img/personajes/rita.png" alt="imagen de rita">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>rita</h3>
-            <h4>Interpretada por: Rika Morinaga (JP) / Michelle Ruff (EN)</h4>
-            <p>
-              <em>Una investigadora de Aspio</em> que estudia Blastia y odia que la interrumpan durante su investigación. Es una persona solitaria a la que no le gusta entablar relaciones con nadie. Karol la fastidia y no duda en ponerlo en su lugar cuando tiene la oportunidad.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/stelle_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/stelle.png">
-              <img src="img/personajes/stelle.png" alt="imagen de stelle">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>stelle</h3>
-            <h4>Interpretada por: Mai Nakahara (JP) / Eden Riegel (EN)</h4>
-            <p>
-              Si bien nombre real es Estellise, <em>Yuri la apoda "Estelle"</em>, nombre que adopta por el resto de la aventura. Permaneció encerrada durante mucho tiempo en su castillo de Zaphias donde aprendió a luchar con espada. Queriendo explorar el mundo, aprovecha la oportunidad y se va con Yuri fuera de la capital. Está muy sorprendida de lo que descubre sobre el mundo y le gusta aprender leyendo libros.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img_personaje">
-            <picture>
-              <source media="(min-width:993px)" srcset="./img/personajes/yuri_pc.png">
-              <source media="(min-width:576px)" srcset="img/personajes/set_2/yuri.png">
-              <img src="img/personajes/yuri.png" alt="imagen de yuri">
-            </picture>
-          </div>
-          <div class="descripcion_personaje">
-            <h3>yuri</h3>
-            <h4>Interpretado por: Kosuke Toriumi (JP) / Troy Baker/Grant George (EN)</h4>
-            <p>
-              <em>El personaje principal del juego</em>, un joven que vive en los barrios bajos de la capital, Zaphias, y ayuda a los necesitados. Es muy sarcástico y cínico pero tiene una buena formación. Al igual que su amigo de la infancia <em>Flynn</em>, una vez fue un caballero, lo que le dio la libertad de hacer viajes cortos fuera de su ciudad natal, pero se retiró debido a su aversión al gobierno. Ahora trabaja como guardaespaldas. <em>de Flynn, decide irse de la ciudad por su cuenta.</em> Después de los hechos que lo llevaron a ser encarcelado, conoce a la princesa Estelle y parten juntos para descubrir el mundo más allá de la capital, Zaphias.
-            </p>
+        <div class="col-12 col-lg-6">  
+          <p class="my-2 text-center">
+            En nuestra <em>tienda virtual</em> podras encontrar productos que te ayudaran a <strong>vivir de manera más sustentable</strong> y ser más amigable con el medio ambiente
+          </p>
+          <div class="d-flex justify-content-lg-end justify-content-md-center">
+            <button type="button" class="btn btn-success my-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+              </svg>
+              ir a la tienda
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="galeria" id="galeria">
-      <h2>Galeria</h2>
-      <div><img src="img/capturas/ataque_especial.jpg" alt="yuri ejecutando su ataque especial"></div>
-      <div><img src="img/capturas/ciudad.jpg" alt="personajes en la ciudad"></div>
-      <div><img src="img/capturas/barco.jpg" alt="personajes en el barco"></div>
-      <div><img src="img/capturas/graficos_actualizados.jpg" alt="personajes combatiendo contra enemigos"></div>
-      <div><img src="img/capturas/combate.jpg" alt="personajes combatiendo"></div>
-      <div><img src="img/capturas/lucha_con_amigos.jpg" alt="yuri y flynn combatiendo juntos"></div>
+    <!--------------------------------------------------------------------->
+    <section class="container" id="lista-productos">
+      <div class="col-12 my-3">
+        <h2 class="text-center">Bienvenido a nuestra tienda <span class="titulo-marron">sustentable</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-12  col-md-6 col-lg-4 col-xxl-3 d-flex flex-column mb-3 align-items-lg-stretch">
+          <div class="card mb-4 shadow align-self-center card-producto">
+            <div class="card-img-producto d-flex align-items-center">
+              <img classs="img-fluid" src="./img/termotanque_solar.webp" class="card-img-top" alt="imagen de termotanque solar">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Termotanque solar</h5>
+              <p class="card-text card-descript-product">Termotanque solar de 300ltrs de capacidad.</p>
+              <p>$150.000</p>
+              <a href="producto.html" class="btn btn-success shadow-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-4 col-xxl-3 d-flex flex-column mb-3 align-items-lg-stretch">
+          <div class="card mb-4 shadow align-self-center card-producto">
+            <div class="card-img-producto d-flex align-items-center">
+              <img classs="img-fluid" src="./img/compostera.webp" class="card-img-top" alt="compostera para compost">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Compostera</h5>
+              <p class="card-text card-descript-product">Compostera de 120ltrs y cuatro camaras.</p>
+              <p>$150.000</p>
+              <a href="producto.html" class="btn btn-success shadow-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-4 col-xxl-3 d-flex flex-column mb-3 align-items-lg-stretch">
+          <div class="card mb-4 shadow align-self-center card-producto">
+            <div class="card-img-producto d-flex align-items-center">
+              <img classs="img-fluid" src="./img/generador_eolico.webp" class="card-img-top" alt="generador elolico">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Generador vertical</h5>
+              <p class="card-text card-descript-product">Generador Eólico de 1 Kw. Incluye la resistencia de carga, que permite combinar con paneles solares.
+                </p>
+              <p>$150.000</p>
+              <a href="producto.html" class="btn btn-success shadow-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-4 col-xxl-3 d-flex flex-column mb-3 align-items-lg-stretch">
+          <div class="card mb-4 shadow align-self-center card-producto">
+            <div class="card-img-producto d-flex align-items-center">
+              <img classs="img-fluid" src="./img/manto_drenante.webp" class="card-img-top" alt="manto drenante para terrazas">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Manto Geotextil</h5>
+              <p class="card-text card-descript-product">
+                Es un manto geotextil no tejido de polipropileno que se obtiene por el sistema spunbonded de extrusión directa, fabricado a partir de filamentos de poliéster al 100%
+              </p>
+              <p>$150.000</p>
+              <a href="producto.html" class="btn btn-success shadow-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-md-6 col-lg-4 col-xxl-3 d-flex flex-column mb-3 align-items-lg-stretch">
+          <div class="card mb-4 shadow align-self-center card-producto">
+            <div class="card-img-producto d-flex align-items-center">
+              <img classs="img-fluid" src="./img/panel_solar.webp" class="card-img-top" alt="kit panel solar">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kit Solar Con Panel 160w</h5>
+              <p class="card-text card-descript-product">
+                Panel de 160W policristalino (Vida útil 30 años). Medidas en milímetros (1480 x 670).
+                1 Regulador de carga 20 A (Inteligente con pantalla y USB), 1 Batería Solar de 110Ah,
+                Todos los cables y bornes para su conexión.
+              </p>
+              <p>$150.000</p>
+              <a href="producto.html" class="btn btn-success shadow-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="formulario_contacto" id="contacto">
-      <h2>Participa por premios exclusivos</h2>
-      <div class="container">
-        <div class="formBx">
-          <form action="#" method="post">
-            <div class="inputBox">
-              <input type="text" required="required" autocomplete="off" name="nombre" >
-              <span>Nombre completo</span>
+    <!--------------------------------------------------------------------->
+    <section class="row mx-auto" id="contacto">
+      <div class="col-12 text-center">
+        <h2 class="my-3">¿Tenes dudas? Contactatanos</h2>
+      </div>
+      <div class="col-12">
+        <form action="#" method="POST" class="row">
+          <div class="col-12 col-sm-6 my-2 col-xxl-3">
+            <div class="form-floating">
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label class="form-label" for="nombre">Nombre</label>
             </div>
-            <div class="inputBox">
-              <input type="tel"  required="required" name="telefono" >
-              <span>Número de telefono</span>
+          </div>
+          <div class="col-12 col-sm-6 my-2 col-xxl-3">
+            <div class="form-floating">
+                <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <label class="form-label" for="apellido">Apellido</label>
             </div>
-            <div class="inputBox">
-              <input type="email" autocomplete="off" required="required" name="email" >
-              <span>Dirección de Email</span>
+          </div>
+          <div class="col-12 col-md-6 my-2 col-xxl-3">
+            <div class="form-floating">
+                <input class="form-control" type="email" name="mail" id="mail" placeholder="mail">
+                <label class="form-label" for="email">Ingrsa tu E-mail</label>
             </div>
-            <div class="inputBox">
-              <textarea required="required" name="mensaje"></textarea>
-              <span>Dejanos tu mensaje...</span>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 my-2 col-xxl-3">
+            <div class="form-floating">
+              <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="telefono">
+              <label class="form-label" for="telefono">Dejanos tu número</label>
             </div>
-            <div class="inputBox">
-              <input type="submit" value="Enviar" >
-            </div>
-          </form>
-        </div>
-        <div class="imgBx">
-            <img src="./img/otros/figura_1.jpg" alt="funkos de los personajes">
-        </div>
+          </div>
+          <div class="col-12 mb-3 col-xxl-12">
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escuchamos tus inquietudes"></textarea>
+          </div>
+          <div class="d-flex justify-content-end">
+            <input type="submit" value="Contactate" class="btn bg-verde-principal text-light mt-3">
+          </div>
+        </form>
       </div>
     </section>
   </main>
-  <footer class="footer_contacto">
-    <div>
-      <div id="logo_contenedor">
-        <a id="logo_davinci" href="https://davinci.edu.ar/" target="_blank">Escuela Da Vinci</a>
-      </div>
-      <div id="datos_tp">
-        <ul>
-          <li>Asignatura: Interacción con dispositivos moviles </li>
-          <li>Profesora: Jorge Perez</li>
-          <li>Alumno: Gonzalez Chavez Pedro</li>
-          <li>Edad: 32 años</li>
-          <li>Correo: pedro.gonzalez@davinci.edu.ar</li>
-        </ul>
-        <div id="foto">
-          <img src="./img/foto_pedro.jpeg" alt="imagen de pedro gonzalez chavez">
+  <!--------------------------------------------------------------------->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top bg-marron">
+    <div class="row">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="foto-alumno">
+          <img class="img-fluid" src="./img/foto_pedro.jpeg" class="d-block w-100" alt="fotografía de pedro gonzalez chavez">
         </div>
+      </div>
+      <div class="col-12 col-md-6 justify-content-center">
+        <ul>
+          <li>Nombre: PEDRO</li>
+          <li>Apellido: GONZALEZ CHAVEZ</li>
+          <li>Edad: 32 años</li>
+          <li>Email:pedro.gonzalez@davinci.edu.ar</li>
+          <li>Materia:Interacción con dispositivos mobiles</li>
+          <li>Curso: DWN2BV</li>
+          <li>Profesor: Jorge Pérez</li>
+          <li>Año: 2022</li>
+        </ul>
       </div>
     </div>
   </footer>
+  <!--------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
