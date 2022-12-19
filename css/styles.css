@@ -1,210 +1,157 @@
-/*armar clases para colores personalizados*/
-body {
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+:root{
+  --verde-principal:rgb(69, 150, 70);
+  --amarillo:#e5d620;
+  --marron:#97532c;
+  --azul:#3d5260;
 }
 
-::selection {
-    background-color: #f1e1ff;
+body{
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.strong-sin-estilos {
-    text-decoration: none;
+h1{
+  display: none;
 }
 
-.bg-violet-gradient {
-    background: linear-gradient(130deg, #4a2980, #cc99cc);
-    background-color: #4a2980;
+ul{
+  list-style:none;
+    padding:0;
+    margin:0;
 }
 
-.bg-dark-violet {
-    background-color: #1f0942;
+#texto-rigth{
+  margin-left: 35%;
 }
 
-.bg-light-violet {
-    background-color: #f1e1ff;
+.bg-verde-principal{
+  background-color: var(--verde-principal);
+}
+.bg-amarillo{
+  background-color: var(--amarillo);
+}
+.bg-marron{
+  background-color: var(--marron);
+}
+.bg-azul{
+  background-color: var(--azul);
+}
+.color-verde-principal{
+  color: var(--verde-principal);
+}
+.color-amarillo{
+  color: var(--amarillo);
+}
+.color-marron{
+  color: var(--marron);
 }
 
-.bg-green {
-    background-color: #64ffda;
+.logo{
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  border-radius: 50%;
 }
 
-.border-dark-violet {
-    border: #1f0942 solid 2px;
+.icono-blanco{
+  color: whitesmoke;
+}
+.icono-blanco svg{
+  width: 30px;
+  height: 30px;
 }
 
-.btn-violet-gradient {
-    background: linear-gradient(130deg, #4a2980, #8159c3);
-    background-color: #4a2980;
-    color: whitesmoke;
+.carrito{
+  top: 11px !important;
+  left:96% !important;
 }
 
-.btn:hover {
-    background: linear-gradient(160deg, #442575, #946bd4);
-    color: whitesmoke;
+.titulo{
+  font-family: 'Lemonada';
+  font-weight: 700;
+  color: var(--verde-principal);
+}
+.titulo-marron{
+  font-family: 'Lemonada';
+  font-weight: 700;
+  color: var(--marron);
 }
 
-.text-dark-violet {
-    color: #1f0942;
+.card-producto{
+  width: 18rem
+}
+.card-img-producto{
+  height: 404px;
+}
+.card-descript-product{
+  height: 48px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;
 }
 
-.shadow-sm-personalizada {
-
-    box-shadow: 0 .125rem .25rem red;
+#contacto{
+  max-width: 90%;
 }
-
-#logo {
-    width: 120px;
-    height: 34px;
+.banner{
+  width: 94%;
 }
-
-
-a.nav-link:hover {
-    
-    color: #64ffda !important;
-    font-weight: 500;
-}
-h1 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    color: #1f0942;
-}
-
-h2 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    color: #1f0942;
-}
-
-a {
-    text-decoration: none;
-}
-
-#container-formulario {
-    justify-content: center;
-
-}
-
 .form-control:focus {
-    color: #212529;
-    background-color: #fff;
-    border-color: #1f0942;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(122, 70, 207, 0.25);
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--verde-principal);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(69 150 70 / 25%);
 }
 
-.form-select:focus {
-    border-color: #1f0942;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(122, 70, 207, 0.25);
+footer{
+  color: whitesmoke;
 }
 
-option:hover {
-    background-color: #f1e1ff !important;
+.foto-alumno img {
+  width: 250px;
+  height: 250px;
 }
 
-.form-check-input:checked {
-    background-color: #64ffda;
-    border-color: #64ffda;
-
+.producto-descript{
+  min-width: 320px;
+  max-width: 112vh;
+  
+}
+.producto-decripcion-detalle{
+  padding: 1.5rem;
+}
+#main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mtb-6{
+  margin-top: 2%;
 }
 
-.iconos-redes svg:hover {
-    fill: #64ffda;
+.producto-precio{
+  font-size: 1.5rem;
 }
 
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) { 
+  .contenedor-descript{
+    display: flex;
+    justify-content: center;
+  }
+ }
 
-footer>div {
-    flex-direction: column;
-}
+ @media (min-width: 700px) { 
+  section #lista-productos{
+    max-width: 610px !important;
+  }
+ }
 
-.datos-footer {
-    text-align: center;
-    padding: 2rem 0rem;
-
-}
-
-.datos-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-textarea {
-    resize: none;
-}
-
-.modal {
-    height: 90%;
-}
-
-.modal-body {
-    height: 70%;
-    overflow-y: scroll;
-}
-
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    #logo {
-        width: 200px;
-        height: 57px;
-    }
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
-    footer>div {
-        flex-direction: row;
-    }
-
-    .datos-footer {
-        text-align: left;
-    }
-
-    .datos-footer ul {
-        list-style-type: none;
-    }
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-    #container-formulario {
-        justify-content: center;
-
-    }
-
-    #seccion-suscripcion {
-        background-image: url("../img/background-form-lg.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-
-    #seccion-suscripcion {
-        background-image: url("../img/background-form.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-
-    #container-formulario {
-        justify-content: start;
-
-    }
-
-    header {
-        background: linear-gradient(90deg, #BCAEC8, #DEC9E8);
-    } 
-    #carouselExampleCaptions {
-        max-width: 1920px;
-        
-    }
-}
+ @media (min-width: 1600px) {
+  .banner{
+    width: 64%;
+  }
+ }
