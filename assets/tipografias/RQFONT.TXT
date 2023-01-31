@@ -1,0 +1,112 @@
+The RQ Font is _ Copyright 1993, Oliver Jovanovic, all rights reserved.  
+The font is not in the public domain, however, it may be redistributed free 
+of charge, as long as this documentation, unmodified, accompanies the font.
+
+The RQ Font may not be sold or offered for sale, or included with another 
+product offered for sale, except with the express written permission of the 
+author. Companies that profit from the sale of public domain and shareware 
+software are expressly prohibited from distributing the RQ Font.
+
+The font can be freely used in any sort of personal non commercial or non 
+profit work (of course, a donation would not be refused). However, if this 
+font is to be used in any way in a business, commercial, or profit making 
+venture, it must first be licensed from me. To arrange for such a licence, 
+contact me at any of the following addresses:
+
+Internet:   jovanovic@cuccfa.ccc.columbia.edu
+Bitnet:     jovanovic@cuccfa
+AOL:        Gray
+CompuServe: 73567,1725
+AppleLink:  UG0351
+GEnie:      o.jovanovic
+
+Surface mail:  Oliver Jovanovic
+               825 W. 187th St.
+               New York, N.Y. 10033
+
+
+My hope is that the distribution of this font will encourage the development
+and exchange of other such RQ products - if you have a Mac, IBM or otherwise
+portable computer based RQ product, or interesting RQ material in computer 
+readable format, I'd be interested in seeing it as well.
+
+
+For the most part, use of the font is fairly straightforward. 
+Runes have been assigned to keys on the basis of alphabetical
+order or their resemblance to an an ASCII character to a rune 
+(y for Truth, t for Death, * for Fate, etc.). For the most part, 
+the lower or upper case versions of the character are identical - 
+the uppercase (shifted) versions were included, where possible 
+for the sake of convenience. In five cases, the shifted version
+version is different - these are generally variations of the unshifted rune:
+
+e - Earth    		Shift e - Dark Earth
+f - Fire     		Shift f - Ice
+k - Cold     		Shift k - Heat
+n - Dragonewt		Shift n - Dragon
+o - Light    		Shift o - Shadow
+
+
+In addition, four runes can only be accessed by a shifted combination -
+these are:
+
+Shift 1 "!" - Luck
+Shift 3 "#" - Trade
+Shift 6 "^" - Pamalt
+Shift 8 "*" - Fate
+
+Please note that if you are using a non-Postscript printer, the 
+Truetype version of the font will generally give better results.
+
+The complete list (display in a monospaced font for best effect):
+
+RUNE                KEY
+
+Air                 a      		or A
+Beast               b      		or B
+Chaos               c      		or C
+Cold                k
+Darkness            d      		or D
+Death               t      		or T
+Disorder            j      		or J
+Dragon              Shift n		or N
+Dragonewt           n
+Earth, Light        e
+Earth, Dark         Shift e		or E
+Fate                Shift 8		or *
+Fertility           x      		or X
+Fire                f
+Harmony             h      		or H
+Heat                Shift k		or K
+Hunger              g      		or G
+Ice                 Shift f		or F
+Illusion            i      		or I
+Infinity            8
+Law                 l      		or L
+Light               o
+Luck                Shift 1		or !
+Magic               r      		or R
+Man                 m      		or M
+Mastery             w      		or W
+Moon                q      		or Q
+Movement            v      		or V
+Pamalt              Shift 6		or ^
+Plant               p      		or P
+Shadow              Shift o		or O
+Spirit              s      		or S
+Stasis              u      		or U
+Trade               Shift 3		or #
+Truth               y      		or Y
+Water               z      		or Z
+
+Crescent Go Moon    1
+Dying Moon          2
+Black Moon          3
+Crescent Come Moon  4
+Empty Half Moon     5
+Full Moon           6
+Full Half Moon      7
+
+Empty Bullet        =
+Filled Bullet       Shift =	or +
+Crossed Out Bullet  -
