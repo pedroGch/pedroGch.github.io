@@ -15,8 +15,12 @@ h1,h2{
     
 } 
 
-
 main{
+  width: 100vw;
+  height: 100vh;    
+}
+
+main.index{
   width: 100vw;
   height: 100vh;
   background-image:
@@ -91,3 +95,15 @@ main.del-jugador{
     content: "-";
     color:#fff;
   }
+.nombre-pj{
+  color: black;
+  background-image: url('./../assets/svg/encabezado.svg');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: 250px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-y: -6px;
+}
