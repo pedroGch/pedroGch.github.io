@@ -1,0 +1,223 @@
+/*armar clases para colores personalizados*/
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+::selection {
+    background-color: #dfe7e7;
+}
+
+
+
+/*
+ESTILOS TAG PRE, SUGERENCIA EN CLASE
+*/
+
+pre {
+    border:thin solid gainsboro;
+    border-radius: 1em;
+    background-color: ghostwhite;
+    margin: 1em;
+    padding: 1em;
+    color: rgb(44, 44, 44);
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/**/
+.grey {
+    color: #8EA3A6;
+}
+
+.strong-sin-estilos {
+    text-decoration: none;
+}
+
+.bg-orange {
+    
+    background-color: #e6896a;
+}
+
+.bg-grey {
+    background-color: #8ea3a6;
+}
+
+.bg-sand {
+    background-color: #fff7f0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.border-brown {
+    border: #55392b solid 2px;
+}
+
+.btn-grey-white {
+    background-color: #8ea3a6;
+    color: whitesmoke;
+}
+
+.btn:hover {
+    background-color: #e6896a;
+    color: whitesmoke;
+}
+
+.text-brown {
+    color: #55392b;
+}
+
+#logo {
+    width: 120px;
+    height: 34px;
+}
+
+
+a.nav-link:hover {
+    
+    color: #8ea3a6 !important;
+    font-weight: 500;
+}
+h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    color: #e6896a;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    color: #e6896a;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-formulario {
+    justify-content: center;
+
+}
+
+.form-control:focus {
+    color: #e6896a;
+    background-color: #fff;
+    border-color: #55392b;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(230, 137, 106, 0.25);
+}
+
+.form-select:focus {
+    border-color: #55392b;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(230, 137, 106, 0.25);
+}
+
+option:hover {
+    background-color: #e6896a !important;
+}
+
+.form-check-input:checked {
+    background-color: #8ea3a6;
+    border-color: #8ea3a6;
+
+}
+
+.iconos-redes svg:hover {
+    fill: #e6896a;
+    -webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+
+footer>div {
+    flex-direction: column;
+}
+
+.datos-footer {
+    text-align: center;
+    padding: 2rem 0rem;
+
+}
+
+.datos-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.modal {
+    height: 90%;
+}
+
+.modal-body {
+    height: 70%;
+    overflow-y: scroll;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #logo {
+        width: 200px;
+        height: 57px;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    footer>div {
+        flex-direction: row;
+    }
+
+    .datos-footer {
+        text-align: left;
+    }
+
+    .datos-footer ul {
+        list-style-type: circle;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    #container-formulario {
+        justify-content: center;
+
+    }
+
+    #contacto {
+        background-image: url("../img/background-form-lg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+    #contacto {
+        background-image: url("../img/background-form.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #container-formulario {
+        justify-content: start;
+
+    }
+}
